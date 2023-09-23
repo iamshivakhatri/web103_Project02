@@ -1,0 +1,2 @@
+(base) student@NKU089545 web103_Project02 % rm -rf .git
+
