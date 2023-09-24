@@ -8,7 +8,7 @@ const renderMovies = async () => {
     const mainContent = document.getElementById('main-content')
 
     if (data) {
-        data.map(movie => {
+        data.map(movie => { 
             const card = document.createElement('div')
             card.classList.add('card')
             const topContainer = document.createElement('div')
@@ -40,9 +40,12 @@ const renderMovies = async () => {
             link.setAttribute('role', 'button')
             link.href = `/movies/${movie.id}`
             bottomContainer.appendChild(link)
-        
+
+
+            
             card.appendChild(topContainer)
             card.appendChild(bottomContainer)
+            
             mainContent.appendChild(card)
         })
 

@@ -1,2 +1,5 @@
 (base) student@NKU089545 web103_Project02 % rm -rf .git
 
+relational database
+
+pool.query(query, values, function handling response)

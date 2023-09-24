@@ -7,10 +7,10 @@ const renderMovie = async () => {
     movie = data.find(movie => movie.id === requestedID)
     if (movie) {
 
-        document.getElementById('image').src = movie.posterImage
+        document.getElementById('image').src = movie.posterimage
         document.getElementById('title').textContent = movie.title
         document.getElementById('genre').textContent = movie.genre
-        document.getElementById('releaseyear').textContent = 'Release Year : ' + movie.releaseYear
+        document.getElementById('releaseyear').textContent = 'Release Year : ' + movie.releaseyear
         
     }
     else {

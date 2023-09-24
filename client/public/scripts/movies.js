@@ -19,16 +19,16 @@ const renderMovies = async () => {
             bottomContainer.className = 'bottom-container'
         
             //set background image of top container
-            topContainer.style.backgroundImage = `url(${movie.posterImage})`
+            topContainer.style.backgroundImage = `url(${movie.posterimage})`
         
             const name = document.createElement('h3')
             bottomContainer.append(name)
             name.textContent = movie.title
         
         
-            const price = document.createElement('p')
-            price.textContent = movie.price
-            bottomContainer.append(price)
+            const releaseyear = document.createElement('p')
+            releaseyear.textContent = movie.releaseyear
+            bottomContainer.append(releaseyear)
         
         
             const audience = document.createElement('p')

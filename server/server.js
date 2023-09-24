@@ -1,6 +1,9 @@
 import express from "express"
 import moviesRouter from './routes/movies.js'
 
+import './config/dotenv.js'
+
+
 
 const app = express();
 
@@ -14,7 +17,10 @@ app.get("/", (req, res) => {
     res.status(200).send('<h1 style="text-align: center; margin-top: 50px;">UnEarthed API</h1>')
  })
 
-const PORT = process.env.PORT || 3001;
-
-app.listen(3000, () => console.log("Server is running on port 3000"));
+ const PORT = process.env.PORT || 3001
+    
+ app.listen(PORT, () => {
+   console.log(`🚀 Server listening on http://localhost:${PORT}`)
+ })
+ 
 

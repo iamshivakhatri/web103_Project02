@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/movies': {
-        target: 'http://localhost:3000'
+        target: 'http://localhost:3001'
       }
     }
   }

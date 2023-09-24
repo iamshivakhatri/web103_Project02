@@ -11,7 +11,7 @@ const headerLeft = document.createElement('div')
 headerLeft.className = 'header-left'
 
 const headerLogo = document.createElement('img')
-headerLogo.src = '/logo.png'
+headerLogo.src = '/board.png'
 
 const headerTitle = document.createElement('h1')
 headerTitle.textContent = 'Movieholic'
